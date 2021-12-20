@@ -8,16 +8,39 @@
             margin: 0;
             overflow: hidden;
         }
-        #btn_start{
+        #info {
             position: absolute;
+            top: 30px;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            color: white;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+            z-index: 100;
+            font-size: 50px;
+            display:block;
+        }
+        #youDied{
+            display: block;
+            position: absolute;
+            top: 100px;
+            opacity: 0;
+            text-align: center;
+            width: 100%;
+            color: white;
+            font-size: 70px;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: black;
+
         }
     </style>
 </head>
 <body>
 
 
-
-
+<div id="info">Description</div>
+<div id="youDied">You died</div>
 
 
     <script src="three.js"></script>

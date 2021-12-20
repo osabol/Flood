@@ -15,13 +15,23 @@ let movementX = 0, movementY = 0
 
 let controls
 
+let objectsRemaining = 3
+let canDie = true
+
 var clock = new THREE.Clock();
 var scene = new  THREE.Scene;
 var renderer = new THREE.WebGLRenderer();
 let light = initLight()
 let camera = initCamera()
 let water = initWater()
+let lock = true
+let message = document.getElementById("info")
+let gameOverMessage = document.getElementById("youDied")
+
+let currOpacity = 0
+console.log(">>>",currOpacity)
 var camControls = initMovement()
+let showMessage = false
 
 
 const raycaster = new THREE.Raycaster();
@@ -34,6 +44,7 @@ window.addEventListener('click',event =>{
     raycaster.setFromCamera(clickMouse,camera)
     const intersects = raycaster.intersectObjects(scene.children)
     // console.log(scene.children[5])
+    if(intersects[0] == null) return;
     parent = intersects[0].object
     let idx = 0
     let object = intersects[0].object
@@ -52,8 +63,12 @@ window.addEventListener('click',event =>{
             break
         }
     }
-    // console.log(object)
-    scene.remove(object)
+    if(object.clickable == true) {
+        if(object.position.distanceTo(camera.position) < 3)
+
+            collectObject(object)
+
+    }
 
 })
 
@@ -83,13 +98,28 @@ function animate(){
     render()
     moveGhost()
     if(ghost != null) {
-        if ( ghost.position.distanceTo(camera.position) < 2 )
+        if ( ghost.position.distanceTo(camera.position) < 2 && canDie)
         {
+            gameOverMessage.style.opacity = 1
             console.log("you died")
             camControls.movementSpeed = 0
         }
     }
+    // console.log(currOpacity)
+    if(showMessage == true) {
+        message.style.opacity = currOpacity
+        currOpacity =  currOpacity +=0.01
+        if(currOpacity >= 3) {
+            currOpacity = 1
+            showMessage = false
+        }
 
+    }
+    else if(currOpacity > 0){
+        message.style.opacity = currOpacity
+        currOpacity = (currOpacity <= 0) ? 0 : currOpacity -=0.01
+
+    }
 }
 animate();
 function moveGhost(){
@@ -109,6 +139,17 @@ function moveGhost(){
     }
 }
 
+
+function collectObject(object){
+    objectsRemaining --
+    message.textContent = "Memmory found.   " + (objectsRemaining) + " remaining"
+    if(objectsRemaining == 0 ) {
+        canDie = false
+        scene.remove(ghost)
+    }
+    showMessage = true
+    scene.remove(object)
+}
 
 
 function loadModels(){
@@ -150,12 +191,15 @@ function loadModels(){
     loader.load("Assets/scary_ghost/scene.gltf",function (gltf){
         temp = gltf.scene;
         scene.add(gltf.scene)
+        scene.name = "Ghost"
         let scale = 0.005
-        temp.position.set(5,0,-5)
+        temp.position.set(0,0,-5)
         // tempObject.rotation.set(0.5,0,0)
         temp.scale.set(scale,scale,scale)
         temp.rotation.y = 1.5
         ghost = temp
+        // ghost.children[0].children[0].children[0].children[0].children[0].children[0].position.set( ghost.position)
+
     })
 
     loader.load("Assets/chainlink_fence_-_low_poly/scene.gltf",function (gltf){
@@ -167,6 +211,7 @@ function loadModels(){
         temp.scale.set(scale,scale,scale)
         temp.rotation.y = 1.5
 
+
         let clone
         let startPos = -45
         for(var i = 0 ; i  < 40; i ++)
@@ -176,6 +221,8 @@ function loadModels(){
             clone.rotation.y= 0.0
             scene.add(clone)
         }
+        scene.remove(temp)
+
 
     })
 
@@ -210,9 +257,81 @@ function loadModels(){
         // tempObject.rotation.set(0.5,0,0)
         temp.scale.set(scale,scale,scale)
     })
+    loader.load("Assets/van/scene.gltf",function (gltf){
+        temp = gltf.scene;
+        scene.add(gltf.scene)
+        let scale = 0.015
+        temp.position.set(20,-0.3,0)
+        temp.rotation.x = 0.085
+        temp.rotation.y = 1.62
+        temp.scale.set(scale,scale,scale)
+    })
+    loader.load("Assets/diary/scene.gltf",function (gltf){
+        temp = gltf.scene;
+        temp.clickable = true
+        scene.add(gltf.scene)
+        let scale = 0.5
+        temp.rotation.x = 0.085
+        temp.position.set(20.5,0.21,0.3)
+
+        //
+        // const gui = new GUI();
+        // const waterUniforms = water.material.uniforms;
+        // const folderWater = gui.addFolder( 'Water' );
+        // folderWater.add( temp.rotation, 'x', 0.0,5.0).name( 'x' );
+        // folderWater.add( temp.rotation, 'y', 0.0 ,5.0).name( 'y' );
+        // folderWater.add( temp.rotation, 'z', 0.0,5.0).name( 'z' );
+        // folderWater.open();
+        // temp.scale.set(scale,scale,scale)
+    })
+
+    loader.load("Assets/trophy/scene.gltf",function (gltf){
+        temp = gltf.scene;
+        temp.clickable = true
+        scene.add(gltf.scene)
+        let scale = 0.005
+        temp.position.set(-12,1.0,-19.65)
+        temp.rotation.x = -0.5
+        temp.rotation.y = -0.5
+        console.log(temp)
+        // tempObject.rotation.set(0.5,0,0)
+        temp.scale.set(scale,scale,scale)
+    })
+    loader.load("Assets/white_photo_frame/scene.gltf",function (gltf){
+        temp = gltf.scene;
+        temp.clickable = true
+        scene.add(gltf.scene)
+        let scale = 0.25
+        temp.position.set(5.55,0.4,-0.8)
+        temp.rotation.x = 0
+        temp.rotation.y = 2.42
+        temp.rotation.z = 1.25
+
+
+        // const folderWater = gui.addFolder( 'Water' );
+        // folderWater.add( waterUniforms.distortionScale, 'value', 0, 8, 0.1 ).name( 'distortionScale' );
+        // folderWater.add( waterUniforms.size, 'value', 0.1, 10, 0.1 ).name( 'size' );
+        // folderWater.open();
 
 
 
+
+        console.log(temp)
+        // tempObject.rotation.set(0.5,0,0)
+        temp.scale.set(scale,scale,scale)
+    })
+
+
+
+function initText(){
+    let text = 'three.js',
+
+        bevelEnabled = true,
+
+        font = undefined,
+        fontName = 'optimer', // helvetiker, optimer, gentilis, droid sans, droid serif
+        fontWeight = 'bold'; // normal bold
+}
 
 
 
@@ -265,6 +384,8 @@ function render() {
 
 
 
+    if(lock)
+        camControls.lookSpeed = 0
 
     camControls.update(delta);
     camera.position.y = 1
@@ -325,16 +446,6 @@ function initWater(){
     water.rotation.x = - Math.PI / 2;
     water.position.set(0,0.05,0)
 
-    // const gui = new GUI();
-
-
-    const waterUniforms = water.material.uniforms;
-
-    // const folderWater = gui.addFolder( 'Water' );
-    // folderWater.add( waterUniforms.distortionScale, 'value', 0, 8, 0.1 ).name( 'distortionScale' );
-    // folderWater.add( waterUniforms.size, 'value', 0.1, 10, 0.1 ).name( 'size' );
-    // folderWater.open();
-
 
 
 
@@ -346,7 +457,7 @@ function initMovement()
 {
     var camControls = new FirstPersonControls(camera);
     camControls.lookSpeed = 0.4;
-    camControls.movementSpeed = 5;
+    camControls.movementSpeed = 3;
     camControls.noFly = true;
     camControls.lookVertical = true;
     camControls.constrainVertical = true;
@@ -364,9 +475,18 @@ function initMovement()
 function initCamera(){
 
     var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.x = 0;
-    camera.position.y = 10;
-    camera.position.z = 0;
+    camera.position.x = -27.95;
+    camera.position.y = 0;
+    camera.position.z = -11.95;
+
+    // const gui = new GUI();
+    // const folderWater = gui.addFolder( 'Water' );
+    // folderWater.add( camera.position, 'x', -30.0,20.0).name( 'x' );
+    // folderWater.add( camera.position, 'y', 0.0 ,5.0).name( 'y' );
+    // folderWater.add( camera.position, 'z', -30.0,20.0).name( 'z' );
+    // folderWater.open();
+
+
     camera.lookAt(new THREE.Vector3(0, 0, 0));
     controls = new PointerLockControls(camera,renderer.domElement)
     scene.add(controls.getObject())
@@ -376,7 +496,7 @@ function initCamera(){
     })
 
 
-    document.body.addEventListener("click",listener,false)
+    document.addEventListener("keydown",listener,false)
     return camera
 
 
@@ -384,7 +504,9 @@ function initCamera(){
 
 }
 
-function listener(){
-    // camera.lock()
+function listener(event){
+
+    if(event.keyCode == 88)
+        lock = !lock
 }
 
