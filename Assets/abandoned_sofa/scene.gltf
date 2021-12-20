@@ -1,0 +1,284 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 628,
+      "max": [
+        63.39030075073242,
+        53.41461181640625,
+        124.58821105957031
+      ],
+      "min": [
+        -63.39030838012695,
+        -56.03179168701172,
+        0.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 7536,
+      "componentType": 5126,
+      "count": 628,
+      "max": [
+        1.0,
+        1.0,
+        0.9935728907585144
+      ],
+      "min": [
+        -1.0,
+        -0.9979094862937927,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 628,
+      "max": [
+        0.9979788064956665,
+        0.9993284940719604,
+        0.9800000190734863,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.9999390840530396,
+        -0.9917668104171753,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 628,
+      "max": [
+        0.9977344274520874,
+        0.999500036239624
+      ],
+      "min": [
+        0.0005000000237487257,
+        0.0005000000237487257
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 2268,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "pamoan10 (https://sketchfab.com/pamoan10)",
+      "license": "CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)",
+      "source": "https://sketchfab.com/3d-models/abandoned-sofa-235f67f4af244ea79e43c90785108192",
+      "title": "Abandoned sofa"
+    },
+    "generator": "Sketchfab-11.12.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 9072,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 5024,
+      "byteOffset": 9072,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 15072,
+      "byteOffset": 14096,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 10048,
+      "byteOffset": 29168,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 39216,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Default_OBJ.002_baseColor.jpeg"
+    },
+    {
+      "uri": "textures/Default_OBJ.002_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/Default_OBJ.002_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Default_OBJ.002",
+      "normalTexture": {
+        "index": 2
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "tocut.002_Default OBJ.002_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        0.8405997157096863,
+        -0.13012023270130169,
+        0.5257954597473145,
+        0.0,
+        0.5294716358184814,
+        -0.007349825464188864,
+        -0.8482958078384399,
+        0.0,
+        0.11424495279788971,
+        0.991470992565155,
+        0.06271670758724235,
+        0.0,
+        -40.95135498046875,
+        4.093611240386971,
+        -36.656715393066406,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "24f6ab554dc648969669d37e539207f7.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        7.846900939941406,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.7423620190951464e-15,
+        -7.846900939941406,
+        0.0,
+        0.0,
+        7.846900939941406,
+        1.7423620190951464e-15,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "tocut.002"
+    },
+    {
+      "mesh": 0,
+      "name": "tocut.002_Default OBJ.002_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}

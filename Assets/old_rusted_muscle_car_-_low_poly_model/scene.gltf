@@ -1,0 +1,806 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 3350,
+      "max": [
+        190.26394653320313,
+        29.712053298950195,
+        1.8127117156982422
+      ],
+      "min": [
+        -14.634130477905273,
+        -25.955127716064453,
+        -70.7088623046875
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 40200,
+      "componentType": 5126,
+      "count": 3350,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 3350,
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.9999973177909851,
+        -0.9999657869338989,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 3350,
+      "max": [
+        0.9957981705665588,
+        0.9984117746353149
+      ],
+      "min": [
+        -3.700143497553654e-05,
+        2.8426638820633343e-09
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 10635,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 80400,
+      "componentType": 5126,
+      "count": 3350,
+      "max": [
+        190.26394653320313,
+        29.712053298950195,
+        1.8127117156982422
+      ],
+      "min": [
+        -14.634130477905273,
+        -25.955127716064453,
+        -70.7088623046875
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 120600,
+      "componentType": 5126,
+      "count": 3350,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 53600,
+      "componentType": 5126,
+      "count": 3350,
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.9999973177909851,
+        -0.9999657869338989,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 26800,
+      "componentType": 5126,
+      "count": 3350,
+      "max": [
+        0.9957981705665588,
+        0.9984117746353149
+      ],
+      "min": [
+        -3.700143497553654e-05,
+        2.8426638820633343e-09
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 42540,
+      "componentType": 5125,
+      "count": 10635,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 160800,
+      "componentType": 5126,
+      "count": 3350,
+      "max": [
+        190.26394653320313,
+        29.712053298950195,
+        1.8127117156982422
+      ],
+      "min": [
+        -14.634130477905273,
+        -25.955127716064453,
+        -70.7088623046875
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 201000,
+      "componentType": 5126,
+      "count": 3350,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 107200,
+      "componentType": 5126,
+      "count": 3350,
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.9999973177909851,
+        -0.9999657869338989,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 53600,
+      "componentType": 5126,
+      "count": 3350,
+      "max": [
+        0.9957981705665588,
+        0.9984117746353149
+      ],
+      "min": [
+        -3.700143497553654e-05,
+        2.8426638820633343e-09
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 85080,
+      "componentType": 5125,
+      "count": 10635,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 241200,
+      "componentType": 5126,
+      "count": 3350,
+      "max": [
+        190.26394653320313,
+        29.712053298950195,
+        1.8127117156982422
+      ],
+      "min": [
+        -14.634130477905273,
+        -25.955127716064453,
+        -70.7088623046875
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 281400,
+      "componentType": 5126,
+      "count": 3350,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 160800,
+      "componentType": 5126,
+      "count": 3350,
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.9999973177909851,
+        -0.9999657869338989,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 80400,
+      "componentType": 5126,
+      "count": 3350,
+      "max": [
+        0.9957981705665588,
+        0.9984117746353149
+      ],
+      "min": [
+        -3.700143497553654e-05,
+        2.8426638820633343e-09
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 127620,
+      "componentType": 5125,
+      "count": 10635,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Daniel Zhabotinsky (https://sketchfab.com/DanielZhabotinsky)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/old-rusted-muscle-car-low-poly-model-6a7e19789d0d44fab0bb8b8a310da9ab",
+      "title": "Old rusted muscle car - Low poly model"
+    },
+    "generator": "Sketchfab-11.30.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 170160,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 107200,
+      "byteOffset": 170160,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 321600,
+      "byteOffset": 277360,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 214400,
+      "byteOffset": 598960,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 813360,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/rustcar_gto_black_baseColor.png"
+    },
+    {
+      "uri": "textures/rustcar_gto_black_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/rustcar_gto_black_normal.png"
+    },
+    {
+      "uri": "textures/rustcar_gto_yellow_baseColor.png"
+    },
+    {
+      "uri": "textures/rustcar_gto_red_baseColor.png"
+    },
+    {
+      "uri": "textures/rustcar_gto_gray_baseColor.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "rustcar_gto_black",
+      "normalTexture": {
+        "index": 2
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "rustcar_gto_yellow",
+      "normalTexture": {
+        "index": 2
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "rustcar_gto_red",
+      "normalTexture": {
+        "index": 2
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 4
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "rustcar_gto_gray",
+      "normalTexture": {
+        "index": 2
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 5
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "rustcar_gto_black_rustcar_gto_black_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "rustcar_gto_yellow_rustcar_gto_yellow_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "rustcar_gto_red_rustcar_gto_red_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 11,
+            "POSITION": 10,
+            "TANGENT": 12,
+            "TEXCOORD_0": 13
+          },
+          "indices": 14,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "rustcar_gto_gray_rustcar_gto_gray_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 16,
+            "POSITION": 15,
+            "TANGENT": 17,
+            "TEXCOORD_0": 18
+          },
+          "indices": 19,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.001418240717612429,
+        0.9999989867210388,
+        0.0,
+        0.0,
+        -0.9999989867210388,
+        -0.001418240717612429,
+        0.0,
+        0.0,
+        -55.378875732421875,
+        0.0778203234076377,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "f893438f7eac4a8ea62789e6b0cd844c.fbx"
+    },
+    {
+      "children": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        2.5399999618530273,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -4.1381852677223383e-07,
+        2.5399999618529936,
+        0.0,
+        0.0,
+        -2.5399999618529936,
+        -4.1381852677223383e-07,
+        0.0,
+        -16.367427825927734,
+        450.0,
+        0.0,
+        1.0
+      ],
+      "name": "rustcar_gto_black"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        -0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -88.43052673339844,
+        25.810897827148438,
+        34.44807434082031,
+        1.0
+      ],
+      "name": "Object_4"
+    },
+    {
+      "mesh": 0,
+      "name": "rustcar_gto_black_rustcar_gto_black_0"
+    },
+    {
+      "children": [
+        7
+      ],
+      "matrix": [
+        2.5399999618530273,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -4.1381852677223383e-07,
+        2.5399999618529936,
+        0.0,
+        0.0,
+        -2.5399999618529936,
+        -4.1381852677223383e-07,
+        0.0,
+        -16.367427825927734,
+        -450.0,
+        0.0,
+        1.0
+      ],
+      "name": "rustcar_gto_yellow"
+    },
+    {
+      "children": [
+        8
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        -0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -88.43052673339844,
+        25.810897827148438,
+        34.44807434082031,
+        1.0
+      ],
+      "name": "Object_7"
+    },
+    {
+      "mesh": 1,
+      "name": "rustcar_gto_yellow_rustcar_gto_yellow_0"
+    },
+    {
+      "children": [
+        10
+      ],
+      "matrix": [
+        2.5399999618530273,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -4.1381852677223383e-07,
+        2.5399999618529936,
+        0.0,
+        0.0,
+        -2.5399999618529936,
+        -4.1381852677223383e-07,
+        0.0,
+        -16.367427825927734,
+        -150.00001525878906,
+        0.0,
+        1.0
+      ],
+      "name": "rustcar_gto_red"
+    },
+    {
+      "children": [
+        11
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        -0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -88.43052673339844,
+        25.810897827148438,
+        34.44807434082031,
+        1.0
+      ],
+      "name": "Object_10"
+    },
+    {
+      "mesh": 2,
+      "name": "rustcar_gto_red_rustcar_gto_red_0"
+    },
+    {
+      "children": [
+        13
+      ],
+      "matrix": [
+        2.5399999618530273,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -4.1381852677223383e-07,
+        2.5399999618529936,
+        0.0,
+        0.0,
+        -2.5399999618529936,
+        -4.1381852677223383e-07,
+        0.0,
+        -16.367427825927734,
+        150.0,
+        0.0,
+        1.0
+      ],
+      "name": "rustcar_gto_gray"
+    },
+    {
+      "children": [
+        14
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        -0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -88.43052673339844,
+        25.810897827148438,
+        34.44807434082031,
+        1.0
+      ],
+      "name": "Object_13"
+    },
+    {
+      "mesh": 3,
+      "name": "rustcar_gto_gray_rustcar_gto_gray_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    },
+    {
+      "sampler": 0,
+      "source": 5
+    }
+  ]
+}
